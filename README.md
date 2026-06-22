@@ -1,83 +1,100 @@
-# MVP Sprint - Análise de Dados e Boas Práticas
+MVP Sprint - Machine Learning & Analytics
+👤 Autor
 
-
-## 👤 Autor
-
-Alesandre José Sá Barreto de Andrade  
+Alesandre José Sá Barreto de Andrade
 Matrícula: 4052025002499
 
+🎯 Objetivo
 
-## 🎯 Objetivo
-Este projeto foi desenvolvido para entrega de MVP do sprint "Análise de Dados e Boas Práticas" para pós-graduação em Análise de Dados e Analytics, ministrada pela PUC-RJ.
+Este projeto foi desenvolvido para entrega do MVP da sprint "Machine Learning & Analytics" da pós-graduação em Análise de Dados e Analytics, ministrada pela PUC-RJ.
 
-O objetivo é analisar padrões de comportamento de consumo dos clientes da Starbucks, investigando as relações entre as variáveis disponíveis e respondendo às hipóteses levantadas ao longo do trabalho.
+O objetivo é construir e avaliar modelos de Machine Learning para prever o valor total gasto em pedidos da Starbucks, utilizando informações sobre os clientes, características dos pedidos, canais de atendimento e produtos adquiridos.
 
-## ▶️ Como executar
+A variável alvo do projeto é total_spend, que representa o valor total gasto em cada pedido. Como se trata de um valor numérico contínuo, o problema foi tratado como uma tarefa de regressão.
 
-1. Abrar o arquivo **"Sprint_Análise_de_Dados_e_Boas_Práticas.ipynp"** diretamenete na raiz desse repositório.
-   
+▶️ Como executar
+
+Abra o arquivo "MVP_Machine_Learning_Analytics.ipynb" diretamente na raiz deste repositório.
+
 OU
 
-1. Abra o notebook no Google Colab pelo link abaixo:  
-   https://colab.research.google.com/drive/1JIT-QhKflTBQWIcx0SjMMYDiE0J9eg_X#scrollTo=VU1Qruh5iklO
-2. Execute todas as células em ordem.
+Abra o notebook no Google Colab pelo link abaixo:
 
+INSERIR LINK DO GOOGLE COLAB AQUI
 
+Execute todas as células em ordem.
 
+📊 Dataset
 
-## 📊 Dataset
+Base utilizada:
+Starbucks Customer Ordering Patterns
 
-Base utilizada:  
-Starbucks Customer Ordering Patterns  
-Fonte: https://www.kaggle.com/datasets/likithagedipudi/starbucks-customer-ordering-patterns
+Fonte:
+https://www.kaggle.com/datasets/likithagedipudi/starbucks-customer-ordering-patterns
 
 O dataset reúne informações como:
-- pedidos realizados  
-- valores gastos  
-- canal de atendimento  
-- horário dos pedidos  
-- características das compras  
-- quantidade de itens por carrinho  
 
+pedidos realizados;
+valores gastos;
+canal de atendimento;
+características dos clientes;
+categorias de bebidas;
+quantidade de itens por pedido;
+número de customizações;
+presença de itens de comida;
+tempo de preparação/entrega;
+nível de satisfação do cliente.
+🧠 Problema de Machine Learning
 
-## 🧠 Hipóteses analisadas
+O problema desenvolvido neste MVP é de regressão.
 
-1. Clientes que realizam pedidos em determinados períodos do dia tendem a apresentar maior valor médio de compra.  
-2. O canal de atendimento pode influenciar o valor dos pedidos realizados pelos clientes.  
-3. Clientes que realizam pedidos com maior frequência tendem a apresentar maior valor médio por pedido.  
+O modelo tem como objetivo prever o valor total gasto em um pedido (total_spend) a partir das demais informações disponíveis na base de dados.
 
-## 🔎 Etapas do projeto
+🔎 Etapas do projeto
 
-O trabalho foi feito seguindo as etapas de análise exploratória de dados:
+O trabalho foi desenvolvido seguindo as principais etapas de um projeto de Machine Learning:
 
-- Definição do problema  
-- Entendimento da base de dados  
-- Estatísticas descritivas  
-- Análise de distribuições  
-- Análise de relações entre variáveis  
-- Matriz de correlação  
-- Pré-processamento de dados  
-- Validação das hipóteses  
-- Conclusão  
+Definição do problema;
+Escolha e apresentação do dataset;
+Análise exploratória dos dados;
+Verificação de valores ausentes e duplicados;
+Análise da variável alvo;
+Tratamento de atributos;
+Engenharia de atributos a partir de data e horário;
+Remoção de colunas identificadoras;
+Divisão entre treino e teste;
+Pré-processamento com pipeline;
+Construção de modelo baseline;
+Treinamento de modelos candidatos;
+Otimização de hiperparâmetros;
+Avaliação final dos modelos;
+Discussão de limitações;
+Conclusão.
+🤖 Modelos avaliados
 
-## 📈 Principais resultados
+Foram avaliados os seguintes modelos:
 
-- O período do dia não apresentou impacto relevante no valor dos pedidos.  
-- O canal de atendimento mostrou influência no valor dos pedidos, com destaque para o Mobile App.  
-- Clientes mais frequentes não gastam mais por pedido, mas acumulam maior consumo ao longo do tempo.  
+DummyRegressor, utilizado como baseline;
+Regressão Linear;
+Random Forest;
+Random Forest otimizado com GridSearchCV.
+📈 Principais resultados
 
-## 📁 Arquivos disponíveis no repositório
+Os modelos candidatos apresentaram desempenho muito superior ao baseline.
 
-- Sprint_Análise_de_Dados_e_Boas_Práticas.ipynp - arquivo notebook Google Colab
-- starbucks_customer_ordering_patterns.csv — dataset original obtido no Kaggle
-- starbucks_processado.csv — dataset com as variáveis derivadas criadas durante a análise
+A Regressão Linear já apresentou bons resultados, indicando que as variáveis disponíveis na base possuem forte relação com o valor gasto pelos clientes.
 
+O melhor desempenho foi obtido com o Random Forest otimizado, que apresentou os menores erros de previsão e o maior valor de R² entre os modelos avaliados.
 
-## ⚙️ Tecnologias utilizadas
-
-- Python  
-- Pandas  
-- Matplotlib  
-- Seaborn  
-- Google Colab 
+📁 Arquivos disponíveis no repositório
+MVP_Machine_Learning_Analytics.ipynb — notebook Google Colab com o desenvolvimento completo do MVP;
+starbucks_customer_ordering_patterns.csv — dataset original obtido no Kaggle.
+⚙️ Tecnologias utilizadas
+Python;
+Pandas;
+NumPy;
+Matplotlib;
+Seaborn;
+Scikit-learn;
+Google Colab.
 
