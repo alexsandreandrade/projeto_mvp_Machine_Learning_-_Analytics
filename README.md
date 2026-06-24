@@ -21,7 +21,7 @@ OU
 
 Abra o notebook no Google Colab pelo link abaixo:
 
-**INSERIR LINK DO GOOGLE COLAB AQUI**
+**(https://colab.research.google.com/drive/1FjHwH0NfLmQsXKe34iA_st6Xk1sFYvRu#scrollTo=RsDEwLIGwo2C)**
 
 Execute todas as células em ordem.
 
