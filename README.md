@@ -65,6 +65,7 @@ O trabalho foi desenvolvido seguindo as principais etapas de um projeto de Machi
 Foram avaliados os seguintes modelos:
 - `DummyRegressor` utilizado como baseline
 - Regressão Linear
+- Decision Tree
 - Random Forest
 - Random Forest otimizado com `GridSearchCV`
 
@@ -74,6 +75,7 @@ Foram avaliados os seguintes modelos:
 |---|---|---|---|
 | Baseline | 4,4351 | 5,5680 | 0,0000 |
 | Regressão Linear | 0,8300 | 0,9773 | 0,9692 |
+| Decision Tree | 1,0735 | 1,3209 | 0,9437 |
 | Random Forest | 0,8153 | 0,9577 | 0,9704 |
 | Random Forest Otimizado | 0,8001 | 0,9290 | 0,9722 |
 
